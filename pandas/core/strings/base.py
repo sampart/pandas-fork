@@ -60,6 +60,13 @@ class BaseStringArrayMethods(abc.ABC):
     ):
         pass
 
+    def _str_problem(
+            self, some_str
+    ):
+        y_accum = ''
+        for s in some_str:
+            y_accum += s
+
     @abc.abstractmethod
     def _str_startswith(self, pat, na=None):
         pass
